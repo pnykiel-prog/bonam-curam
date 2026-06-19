@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Europejskie Centrum Seniora » Digital Care</title>
+<link rel="stylesheet" href="styles.css">
+<script src="image-slot.js"></script>
+</head>
+<body data-page="digitalcare" data-screen-label="Digital care">
+
+<div id="site-header"></div>
+
+<!-- ============ HERO ============ -->
+<section class="dc-hero">
+  <div class="wrap">
+    <div class="dc-hero-grid">
+      <div class="dc-hero-left reveal">
+        <span class="lbl">Cyfryzacja i digitalizacja</span>
+        <h1 class="dc-title eng mt-s"><span class="gold">Digital Care</span> — moduły cyfrowe dla opieki i polityki senioralnej</h1>
+        <p class="body dc-hero-text mt-m">Digital Care to <span class="gold-ink">zintegrowany system złożony z siedmiu modułów cyfrowych</span>, które można wdrażać razem lub pojedynczo. Obsługują dwa obszary: <span class="gold-ink">opiekę instytucjonalną</span> — domy seniora i ośrodki opieki — oraz <span class="gold-ink">politykę senioralną samorządów</span>.</p>
+        <div class="row-btns mt-l">
+          <a class="btn btn-primary" href="kontakt.html">Bezpłatna konsultacja <span class="arrow">→</span></a>
+          <a class="btn btn-ghost" href="#moduly">Zobacz moduły</a>
+        </div>
+      </div>
+      <img class="dc-hero-photo ph-cover reveal" src="assets/seniors/s27-2.png" alt="Seniorzy korzystający z technologii">
+    </div>
+  </div>
+</section>
+
+<!-- ============ TWO DOMAINS ============ -->
+<section class="dc-domains">
+  <div class="wrap">
+    <div class="dom-grid">
+      <div class="dom">
+        <span class="dom-icon">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M8 34V12l12-6 12 6v22M6 34h28M15 34v-7h10v7M15 16h3M22 16h3M15 22h3M22 22h3"/></svg>
+        </span>
+        <div class="dom-t eng-md">Opieka instytucjonalna</div>
+        <p class="dom-d">Domy seniora i ośrodki opieki — bezpieczeństwo rezydentów, niższe koszty operacyjne i audytowalna dokumentacja.</p>
+      </div>
+      <div class="dom">
+        <span class="dom-icon">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 6 13l14 7 14-7L20 6zM6 13v9M11 16v8l9 4 9-4v-8"/></svg>
+        </span>
+        <div class="dom-t eng-md">Polityka senioralna samorządów</div>
+        <p class="dom-d">Gminy, powiaty, OPS i CUS — diagnoza potrzeb, planowanie usług i monitorowanie zmian w czasie.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODULES ============ -->
+<section class="section bg-white" id="moduly">
+  <div class="wrap">
+    <div class="center reveal">
+      <h2 class="sec-title">Siedem <span class="accent">modułów cyfrowych</span></h2>
+      <hr class="gold-rule">
+      <p class="body mt-m" style="max-width:64ch;margin-left:auto;margin-right:auto">Wdrażaj cały system albo zacznij od jednego modułu — każdy działa samodzielnie i przynosi mierzalny efekt.</p>
+    </div>
+    <div class="mod-grid mt-l" id="modGrid"></div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section class="section bg-alt">
+  <div class="wrap">
+    <div class="dc-cta reveal">
+      <div class="dc-cta-text">
+        <span class="lbl">Konsultacja</span>
+        <h2 class="eng-lg mt-s">Zobacz, jak Digital Care zmieni Twoją placówkę lub gminę</h2>
+        <hr class="gold-rule left">
+        <p class="body mt-m">Zaczynamy od bezpłatnego audytu — pokazujemy, które moduły dają najszybszy efekt w Twoim obiekcie lub jednostce, i w jakiej kolejności je wdrożyć.</p>
+        <a class="btn btn-primary" href="kontakt.html" style="margin-top:24px">Konsultacja <span class="arrow">→</span></a>
+      </div>
+      <img class="dc-cta-photo consult-img" src="assets/consult/consult-1.png" alt="Konsultant Bonam Curam">
+    </div>
+  </div>
+</section>
+
+<div id="site-footer"></div>
+
+<script>
+var MODULES = [
+  {ic:'map', t:'Mapowanie potrzeb opiekuńczych w JST',
+   opis:'Narzędzie diagnozy i planowania polityki senioralnej dla samorządów.',
+   zakres:'Analizuje strukturę demograficzną, skalę i typ potrzeb opiekuńczych oraz dostępne zasoby, wskazuje luki w systemie opieki i pozwala monitorować zmiany w czasie.',
+   gdzie:'Gminy, powiaty oraz jednostki organizujące usługi opiekuńcze (OPS, CUS).',
+   tag:'Samorząd'},
+  {ic:'calc', t:'Aplikacja do wyceny usług opiekuńczych',
+   opis:'Kalkulator kosztu i ceny świadczeń opiekuńczych dla kadry zarządzającej.',
+   zakres:'Szybko i spójnie wylicza koszt oraz cenę poszczególnych usług, wspiera decyzje cenowe i przygotowanie oferty.',
+   gdzie:'Domy seniora, ośrodki opieki i podmioty świadczące usługi opiekuńcze.',
+   tag:'Opieka'},
+  {ic:'vision', t:'SeniorVision — bezpieczeństwo i monitoring',
+   opis:'System bezpieczeństwa oparty na analizie ruchu i aktywności, bez nagrywania obrazu.',
+   zakres:'Wykrywa upadki i brak aktywności, potwierdza obecność i alarmuje personel; analiza odbywa się bezpośrednio na urządzeniu, zgodnie z RODO.',
+   gdzie:'Domy seniora, ośrodki opieki i mieszkania wspomagane.',
+   tag:'Opieka'},
+  {ic:'voice', t:'Asystent głosowy',
+   opis:'Głosowy interfejs systemu dla seniora.',
+   zakres:'Obsługuje rutynowe zapytania i przypomnienia, łączy z opiekunem i ogranicza liczbę wejść personelu do pokoju.',
+   gdzie:'Domy seniora, mieszkania wspomagane i opieka domowa.',
+   tag:'Opieka'},
+  {ic:'energy', t:'EMOS — zarządzanie energią budynku',
+   opis:'Inteligentne sterowanie energią obiektu.',
+   zakres:'Reguluje ogrzewanie, oświetlenie i wentylację według rzeczywistego obłożenia i warunków, obniżając rachunki rzędu 15–20%.',
+   gdzie:'Budynki opieki, obiekty senioralne i mieszkania wspomagane.',
+   tag:'Budynek'},
+  {ic:'clean', t:'Automatyzacja i harmonogramowanie sprzątania',
+   opis:'Optymalizacja i automatyzacja utrzymania czystości.',
+   zakres:'Dopasowuje harmonogram do faktycznego użycia pomieszczeń i wspiera pracę maszyn czyszczących (szorowarki, roboty), oszczędzając roboczogodziny.',
+   gdzie:'Domy seniora, ośrodki opieki i większe obiekty senioralne.',
+   tag:'Budynek'},
+  {ic:'admin', t:'Cyfryzacja procesów administracyjnych',
+   opis:'Cyfrowa dokumentacja i raportowanie opieki.',
+   zakres:'Rejestruje obchody, czynności i raporty zmianowe, tworząc audytowalną historię działań dostępną w sekundy.',
+   gdzie:'Domy seniora, ośrodki opieki i podmioty opiekuńcze.',
+   tag:'Opieka'}
+];
+var ICONS = {
+  map:'<svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 8 6 12v24l11-4 10 4 11-4V8l-11 4-10-4zM17 8v24M27 12v24"/></svg>',
+  calc:'<svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="10" y="6" width="24" height="32" rx="2"/><path d="M15 13h14M15 22h3M21 22h3M27 22h3M15 28h3M21 28h3M27 28v6"/></svg>',
+  vision:'<svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22s6-11 16-11 16 11 16 11-6 11-16 11S6 22 6 22z"/><circle cx="22" cy="22" r="4.5"/></svg>',
+  voice:'<svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="17" y="6" width="10" height="20" rx="5"/><path d="M11 21a11 11 0 0 0 22 0M22 32v6M16 38h12"/></svg>',
+  energy:'<svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M24 5 11 25h10l-2 14 14-21H22l2-13z"/></svg>',
+  clean:'<svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M28 6 24 22M16 22h16l-2 14a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2l-2-14zM20 28v4M24 28v4M28 28v4"/></svg>',
+  admin:'<svg viewBox="0 0 44 44" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 6h14l8 8v24H12V6z"/><path d="M26 6v8h8M17 22h12M17 28h12M17 34h7"/></svg>'
+};
+document.getElementById('modGrid').innerHTML = MODULES.map(function(m,i){
+  var num = (i+1<10?'0':'')+(i+1);
+  return '<article class="mod-card reveal">'
+    + '<div class="mod-top"><span class="mod-icon">'+ICONS[m.ic]+'</span><span class="mod-num eng">'+num+'</span><span class="mod-tag">'+m.tag+'</span></div>'
+    + '<h3 class="mod-title eng-md">'+m.t+'</h3>'
+    + '<p class="mod-opis body sm">'+m.opis+'</p>'
+    + '<div class="mod-field"><span class="mf-k">Zakres działania</span><p class="mf-v body sm">'+m.zakres+'</p></div>'
+    + '<div class="mod-field"><span class="mf-k">Gdzie można zastosować</span><p class="mf-v body sm">'+m.gdzie+'</p></div>'
+    + '</article>';
+}).join('');
+</script>
+<script src="site.js"></script>
+
+<style id="page-digitalcare">
+:root{--navy:#15243d;--navy-soft:#1d3052;}
+.gold-ink{color:var(--gold-deep);font-weight:600;}
+
+/* hero */
+.dc-hero{padding-top:clamp(26px,3.5vw,46px);padding-bottom:clamp(36px,4.5vw,56px);}
+.dc-title{font-family:var(--font-eng);font-weight:600;font-size:clamp(26px,3.2vw,42px);line-height:1.16;letter-spacing:.02em;color:var(--ink);max-width:24ch;}
+.dc-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,4vw,60px);align-items:center;margin-top:0;}
+.dc-hero-photo{width:100%;height:clamp(320px,38vw,460px);}
+.dc-hero-text{max-width:52ch;}
+
+/* domains */
+.dc-domains{background:var(--navy);color:#fff;padding:clamp(30px,3.6vw,46px) 0;}
+.dom-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);}
+.dom{display:grid;grid-template-columns:48px 1fr;grid-template-rows:auto auto;column-gap:18px;row-gap:6px;}
+.dom-icon{grid-row:1 / span 2;width:48px;height:48px;color:var(--gold-soft);}
+.dom-icon svg{width:100%;height:100%;}
+.dom-t{color:#fff;font-size:18px;letter-spacing:.05em;align-self:center;}
+.dom-d{font-family:var(--font-serif);font-weight:500;font-size:16.5px;line-height:1.5;color:#cdd5df;grid-column:2;}
+
+/* modules */
+.mod-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.2vw,26px);}
+.mod-card{background:#fff;border:1px solid var(--line);padding:clamp(24px,2.6vw,32px);display:flex;flex-direction:column;transition:border-color .18s ease,box-shadow .18s ease,transform .18s ease;}
+.mod-card:hover{border-color:var(--gold-soft);box-shadow:var(--shadow-md);transform:translateY(-3px);}
+.mod-top{display:flex;align-items:center;gap:12px;}
+.mod-icon{width:38px;height:38px;color:var(--gold);flex:0 0 auto;}
+.mod-icon svg{width:100%;height:100%;}
+.mod-num{font-family:var(--font-eng);font-weight:500;font-size:26px;color:var(--line);line-height:1;margin-left:2px;}
+.mod-tag{margin-left:auto;font-family:var(--font-eng);font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);background:var(--bg-alt);border:1px solid var(--line);padding:5px 10px;}
+.mod-title{font-size:17px;line-height:1.25;letter-spacing:.03em;color:var(--ink);margin-top:18px;min-height:2.5em;}
+.mod-opis{margin-top:10px;color:var(--ink-soft);}
+.mod-field{margin-top:16px;padding-top:14px;border-top:1px solid var(--line-soft);}
+.mf-k{font-family:var(--font-eng);font-size:10.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-deep);display:block;}
+.mf-v{margin-top:7px;}
+
+/* CTA */
+.dc-cta{display:grid;grid-template-columns:1.2fr .8fr;gap:clamp(28px,4vw,60px);align-items:center;}
+.dc-cta-photo{width:100%;height:clamp(260px,26vw,330px);}
+
+@media (max-width:980px){
+  .mod-grid{grid-template-columns:repeat(2,1fr);}
+  .dc-cta{grid-template-columns:1fr;}
+}
+@media (max-width:760px){
+  .dc-hero-grid{grid-template-columns:1fr;gap:clamp(24px,5vw,32px);}
+  .dc-hero-photo{width:100%;height:clamp(260px,60vw,340px);}
+  .dom-grid{grid-template-columns:1fr;gap:24px;}
+  .mod-grid{grid-template-columns:1fr;}
+  .mod-title{min-height:0;}
+}
+</style>
+</body>
+</html>
