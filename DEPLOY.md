@@ -51,6 +51,22 @@ Variables**) następujące zmienne:
 Po dodaniu zmiennych zrób **Redeploy**. Można użyć tych samych danych SMTP,
 które obsługują formularz Fundacji DivideYou — zmienne mają identyczne nazwy.
 
+### Ustawienia dla poczty OVH
+
+| Zmienna | Wartość |
+|---|---|
+| `SMTP_HOST` | `ssl0.ovh.net` |
+| `SMTP_PORT` | `465` (alternatywnie `587`) |
+| `SMTP_SECURE` | `true` dla portu 465, `false` dla 587 |
+| `SMTP_USER` | `office@bonamcuram.com` (realna skrzynka OVH) |
+| `SMTP_PASS` | hasło skrzynki |
+| `MAIL_TO` | `office@bonamcuram.com` |
+| `MAIL_FROM` | `office@bonamcuram.com` (ten sam adres co `SMTP_USER`) |
+
+`ssl0.ovh.net` to uniwersalny serwer SMTP OVH (MX Plan i Email Pro). OVH nie
+pozwala wysyłać z adresu innego niż uwierzytelniona skrzynka, więc `MAIL_FROM`
+musi być równy `SMTP_USER`.
+
 Endpoint zwraca: `200` (wysłano), `400` (błąd walidacji), `405` (zła metoda),
 `500` (brak konfiguracji SMTP), `502` (błąd wysyłki). Wbudowany honeypot
 (`bc_hp`) odrzuca spam botów.
