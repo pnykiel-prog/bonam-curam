@@ -29,6 +29,28 @@ vercel --prod # produkcja
 ## Uwaga o grafikach
 
 Strona odwołuje się do plików w katalogu `assets/` (zdjęcia ekspertów, logo,
-mapy, logotypy partnerów). Te pliki **nie były dołączone** do paczki z kodem —
-po deployu miejsca na obrazy będą puste do czasu wgrania grafik do `assets/`
-(struktura ścieżek jest opisana w `README.md`).
+mapy, logotypy partnerów). Grafiki są już dołączone do repozytorium.
+
+## Formularz kontaktowy (SMTP)
+
+Formularz na `kontakt.html` wysyła zgłoszenia przez funkcję serverless
+`api/send.js` (Nodemailer, ten sam mechanizm co na stronie Fundacji DivideYou).
+Aby działał, ustaw w panelu Vercel (**Project → Settings → Environment
+Variables**) następujące zmienne:
+
+| Zmienna | Opis | Przykład |
+|---|---|---|
+| `SMTP_HOST` | host serwera SMTP | `smtp.example.com` |
+| `SMTP_PORT` | port SMTP | `587` (lub `465`) |
+| `SMTP_SECURE` | `true` dla portu 465, w innym wypadku `false` | `false` |
+| `SMTP_USER` | login SMTP (zwykle adres e-mail) | `office@bonamcuram.com` |
+| `SMTP_PASS` | hasło / hasło aplikacji SMTP | `••••••••` |
+| `MAIL_TO` | adres odbiorcy zgłoszeń | `office@bonamcuram.com` |
+| `MAIL_FROM` | adres nadawcy (musi być dozwolony przez serwer SMTP) | `office@bonamcuram.com` |
+
+Po dodaniu zmiennych zrób **Redeploy**. Można użyć tych samych danych SMTP,
+które obsługują formularz Fundacji DivideYou — zmienne mają identyczne nazwy.
+
+Endpoint zwraca: `200` (wysłano), `400` (błąd walidacji), `405` (zła metoda),
+`500` (brak konfiguracji SMTP), `502` (błąd wysyłki). Wbudowany honeypot
+(`bc_hp`) odrzuca spam botów.

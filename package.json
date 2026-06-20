@@ -1,0 +1,9 @@
+{
+  "name": "bonam-curam",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Witryna Konsorcjum Bonam Curam — Europejskie Centrum Seniora",
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}
