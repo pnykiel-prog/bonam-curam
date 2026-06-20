@@ -256,7 +256,9 @@ document.getElementById('timeline').innerHTML = STEPS.map(function(s,i){
 
 /* coverage map */
 .map-grid{display:grid;grid-template-columns:1fr .9fr;gap:clamp(28px,4vw,60px);align-items:center;}
-.map-photo{width:100%;height:clamp(300px,32vw,420px);background:#fff;object-fit:contain;display:block;}
+.map-photo{width:100%;max-width:100%;height:clamp(300px,32vw,420px);background:#fff;object-fit:contain;display:block;}
+/* pozwól ścieżkom gridu kurczyć się poniżej min-content (naprawa overflow na wąskich ekranach) */
+.op-hero-grid>*,.what-grid>*,.pkg-grid>*,.map-grid>*,.op-cta>*{min-width:0;}
 
 /* timeline */
 .timeline{display:flex;flex-direction:column;gap:0;max-width:900px;}

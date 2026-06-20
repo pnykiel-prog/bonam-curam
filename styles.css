@@ -298,4 +298,6 @@ image-slot.media{display:block;}
 @media (max-width:560px){
   body{font-size:17px;}
   .areas-grid{grid-template-columns:1fr;}
+  /* na wąskich ekranach pozwól długim przyciskom zawijać tekst zamiast rozpychać layout */
+  .btn{white-space:normal;line-height:1.25;max-width:100%;}
 }

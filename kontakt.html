@@ -133,10 +133,11 @@
 
 <style id="page-kontakt">
 .contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,5vw,68px);align-items:start;}
+.contact-grid>*{min-width:0;}
 .contact-meta{border-top:1px solid var(--line);}
 .cm-row{display:grid;grid-template-columns:130px 1fr;gap:18px;padding:15px 0;border-bottom:1px solid var(--line-soft);align-items:baseline;}
 .cm-k{font-family:var(--font-eng);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:600;}
-.cm-v{font-family:var(--font-serif);font-size:17px;color:var(--ink);font-weight:600;}
+.cm-v{font-family:var(--font-serif);font-size:17px;color:var(--ink);font-weight:600;overflow-wrap:anywhere;}
 a.cm-v:hover{color:var(--gold-deep);}
 .contact-card{background:#fff;border:1px solid var(--line);padding:clamp(26px,3.4vw,40px);box-shadow:var(--shadow-md);position:sticky;top:104px;}
 .contact-photo{width:100%;height:clamp(220px,26vw,300px);margin-top:clamp(28px,3.5vw,40px);}
